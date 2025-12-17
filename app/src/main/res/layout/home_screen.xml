@@ -37,7 +37,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Good Morning"
+                        android:text="@string/good_morning"
                         android:textColor="#808080"
                         android:textSize="12sp" />
 
@@ -45,7 +45,7 @@
                         android:id="@+id/tvUserName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sean"
+                        android:text="@string/user_name"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -58,6 +58,7 @@
                     android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/ic_notification"
+                    android:contentDescription="@string/logo_description"
                     app:tint="#FFFFFF" />
             </LinearLayout>
 
@@ -83,7 +84,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total Balance"
+                        android:text="@string/total_balance"
                         android:textColor="#B0B0B0"
                         android:textSize="14sp" />
 
@@ -112,7 +113,7 @@
                             android:layout_marginEnd="8dp"
                             android:layout_weight="1"
                             android:backgroundTint="#00E5CC"
-                            android:text="Income"
+                            android:text="@string/income"
                             android:textColor="#000000"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -128,7 +129,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_weight="1"
                             android:backgroundTint="#2a4d4d"
-                            android:text="Expenses"
+                            android:text="@string/expenses"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -155,7 +156,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Budget Status"
+                    android:text="@string/budget_status"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -164,7 +165,7 @@
                     android:id="@+id/tvViewDetails"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="View Details"
+                    android:text="@string/view_details"
                     android:textColor="#00E5CC"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -197,6 +198,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_budget"
+                            android:contentDescription="@string/logo_description"
                             app:tint="#00E5CC" />
 
                         <TextView
@@ -205,7 +207,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_weight="1"
-                            android:text="Monthly Budget"
+                            android:text="@string/monthly_budget"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -243,7 +245,7 @@
                             android:id="@+id/tvSpentLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Spent"
+                            android:text="@string/spent"
                             android:textColor="#808080"
                             android:textSize="12sp" />
 
@@ -282,7 +284,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Recent"
+                    android:text="@string/recent"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -291,7 +293,7 @@
                     android:id="@+id/tvSeeAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="See All"
+                    android:text="@string/see_all"
                     android:textColor="#00E5CC"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -312,7 +314,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="No transactions yet."
+                    android:text="@string/no_transactions_yet"
                     android:textColor="#808080"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -327,7 +329,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#1a3d3d"
+        android:background="@color/dark_green"
         app:itemIconTint="@color/bottom_nav_item_tint"
         app:itemTextColor="@color/bottom_nav_item_tint"
         app:labelVisibilityMode="labeled"
