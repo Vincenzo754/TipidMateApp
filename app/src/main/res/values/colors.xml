@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green">#0E1F1C</color>
+    <color name="light_green_text">#E6FFF5</color>
+    <color name="primary_accent">#2DE3B6</color>
+    <color name="secondary_text">#A7DAD0</color>
+    <color name="input_field_gray">#1E322D</color>
+    <color name="input_text_color">#9DB9B2</color>
+    <color name="input_field_background">#1C2724</color>
+    <color name="unselected_gray">#808080</color>
+    <color name="orange">#FF8C42</color>
+    <color name="green">#00E5CC</color>
+    <color name="blue">#4A90E2</color>
+</resources>
