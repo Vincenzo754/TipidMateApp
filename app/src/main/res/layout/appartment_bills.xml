@@ -22,7 +22,7 @@
                 android:id="@+id/iv_back_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_back"
+                android:src="@drawable/ic_arrow_back"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:tint="@android:color/white"
@@ -38,7 +38,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintStart_toEndOf="@+id/iv_back_arrow"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- Monthly Budget Card -->
@@ -98,7 +98,7 @@
                     android:textSize="20sp"
                     app:layout_constraintBaseline_toBaselineOf="@id/tv_spent_amount"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_spent_amount" />
+                    app:layout_constraintStart_toEndOf="@id/tv_spent_amount" />
 
                 <TextView
                     android:id="@+id/tv_percent_spent"

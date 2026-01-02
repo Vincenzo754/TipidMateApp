@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#10221D">
+    android:background="#1C3A3A">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:id="@+id/iv_back_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_back"
+            android:src="@drawable/ic_arrow_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@android:color/white"
@@ -148,7 +148,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Save Button -->
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_save_contribution"
             android:layout_width="0dp"
             android:layout_height="60dp"
@@ -159,7 +159,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             app:backgroundTint="@null"
-            app:drawableEnd="@android:drawable/ic_menu_check"
+            app:icon="@drawable/ic_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
