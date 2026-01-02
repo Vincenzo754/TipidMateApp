@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C3A3A"
+    android:background="#10221D"
     tools:context=".ApartmentBillsActivity">
 
     <ScrollView
@@ -19,14 +19,14 @@
 
             <!-- Header -->
             <ImageView
-                android:id="@+id/ivBack"
+                android:id="@+id/iv_back_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_media_previous"
-                app:tint="@android:color/white"
+                android:src="@android:drawable/ic_menu_back"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tvHeader"
-                app:layout_constraintBottom_toBottomOf="@+id/tvHeader"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@android:color/white"
+                android:contentDescription="Back" />
 
             <TextView
                 android:id="@+id/tvHeader"
