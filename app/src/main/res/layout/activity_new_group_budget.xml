@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#10221D"
@@ -193,15 +194,26 @@
 
                     </RelativeLayout>
 
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/members_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="#40FFFFFF" />
 
                     <TextView
+                        android:id="@+id/add_member_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
                         android:drawablePadding="12dp"
+                        android:focusable="true"
                         android:gravity="center_vertical"
                         android:padding="16dp"
                         android:text="@string/add_member"
@@ -240,7 +252,6 @@
         app:itemIconTint="@color/bottom_nav_color_selector"
         app:itemTextColor="@color/bottom_nav_color_selector"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_nav_menu"
-        app:selectedItemId="@id/navigation_group_budget" />
+        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>
