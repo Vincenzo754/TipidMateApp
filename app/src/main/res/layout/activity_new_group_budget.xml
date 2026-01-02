@@ -74,6 +74,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="24dp"
+                android:autofillHints="name"
                 android:background="@drawable/bg_category_unselected"
                 android:hint="@string/budget_name_hint"
                 android:inputType="text"
@@ -103,8 +104,8 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="24dp"
+                android:autofillHints="none"
                 android:background="@drawable/bg_category_unselected"
-                android:drawableStart="@drawable/ic_money"
                 android:drawablePadding="12dp"
                 android:hint="@string/total_budget_hint"
                 android:inputType="numberDecimal"
@@ -112,6 +113,7 @@
                 android:text="@string/currency_symbol"
                 android:textColor="@android:color/white"
                 android:textColorHint="#80FFFFFF"
+                app:drawableStartCompat="@drawable/ic_money"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/total_budget_label" />
@@ -199,13 +201,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_add"
                         android:drawablePadding="12dp"
                         android:gravity="center_vertical"
                         android:padding="16dp"
                         android:text="@string/add_member"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_add" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
