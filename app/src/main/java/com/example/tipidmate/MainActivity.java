@@ -1,23 +1,32 @@
 package com.example.tipidmate;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        // This is the entry point of your app. It will decide whether to show the
-        // LoginActivity or the HomeScreenActivity.
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
-        // For now, we'll just go directly to the LoginActivity.
-        // You can add logic here later to check if the user is already logged in.
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish(); // Finish this activity so the user can't go back to it.
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_group_budget)
+                .build();
+
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
+
 }

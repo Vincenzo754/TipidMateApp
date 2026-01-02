@@ -27,12 +27,7 @@ public class NewGroupBudgetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_new_group_budget);
 
         Toolbar toolbar = findViewById(R.id.top_app_bar);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        toolbar.setNavigationOnClickListener(v -> finish());
 
         membersRecyclerView = findViewById(R.id.members_recycler_view);
         membersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -45,28 +40,22 @@ public class NewGroupBudgetActivity extends AppCompatActivity {
         membersRecyclerView.setAdapter(memberAdapter);
 
         TextView addMemberButton = findViewById(R.id.add_member_button);
-        addMemberButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // For now, let's just add another dummy member
-                memberList.add(new Member("Jane Doe", "J"));
-                memberAdapter.notifyItemInserted(memberList.size() - 1);
-            }
+        addMemberButton.setOnClickListener(v -> {
+            // For now, let's just add another dummy member
+            memberList.add(new Member("Jane Doe", "J"));
+            memberAdapter.notifyItemInserted(memberList.size() - 1);
         });
 
         Button createBudgetButton = findViewById(R.id.create_budget_button);
         EditText budgetNameInput = findViewById(R.id.budget_name_input);
         EditText totalBudgetInput = findViewById(R.id.total_budget_input);
 
-        createBudgetButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent resultIntent = new Intent();
-                resultIntent.putExtra("budgetName", budgetNameInput.getText().toString());
-                resultIntent.putExtra("totalBudget", totalBudgetInput.getText().toString());
-                setResult(RESULT_OK, resultIntent);
-                finish();
-            }
+        createBudgetButton.setOnClickListener(v -> {
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("budgetName", budgetNameInput.getText().toString());
+            resultIntent.putExtra("totalBudget", totalBudgetInput.getText().toString());
+            setResult(RESULT_OK, resultIntent);
+            finish();
         });
     }
 }

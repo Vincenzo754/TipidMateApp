@@ -37,7 +37,7 @@ public class GroupBudgetAdapter extends RecyclerView.Adapter<GroupBudgetAdapter.
         holder.budgetProgress.setProgress(groupBudget.getProgress());
 
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), BudgetDetailsActivity.class);
+            Intent intent = new Intent(v.getContext(), ApartmentBillsActivity.class);
             // You can pass data to the activity here if needed
             v.getContext().startActivity(intent);
         });
