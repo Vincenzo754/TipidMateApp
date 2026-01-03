@@ -14,6 +14,7 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // This was the cause of the crash. It's now inflating the correct layout.
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 }
