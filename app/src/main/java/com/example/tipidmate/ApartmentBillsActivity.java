@@ -8,18 +8,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class GroupBudgetActivity extends AppCompatActivity {
+public class ApartmentBillsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.group_budget_screen);
+        setContentView(R.layout.appartment_bills);
 
-        FloatingActionButton fabAddGroupBudget = findViewById(R.id.fab_add_group_budget);
-        fabAddGroupBudget.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fabAddContribution = findViewById(R.id.fab_add_contribution);
+        fabAddContribution.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GroupBudgetActivity.this, NewGroupBudgetActivity.class);
+                Intent intent = new Intent(ApartmentBillsActivity.this, AddContributionActivity.class);
                 startActivity(intent);
             }
         });
