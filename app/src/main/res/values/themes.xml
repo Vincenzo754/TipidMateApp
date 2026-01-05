@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.TipidMate" parent="Base.Theme.TipidMate" />
+
+    <style name="Theme.YourApp" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Disable ALL button tinting -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorSecondary">@android:color/transparent</item>
+        <item name="materialButtonStyle">@null</item>
+        <item name="android:buttonStyle">@null</item>
+
+    </style>
+
 </resources>

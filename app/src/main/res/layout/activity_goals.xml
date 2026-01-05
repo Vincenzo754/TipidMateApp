@@ -22,13 +22,13 @@
             app:tint="#FFFFFF" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:text="Goals"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <!-- SEARCH BAR -->
@@ -47,7 +47,6 @@
 
     <!-- GOALS LIST -->
     <ScrollView
-        android:id="@+id/scrollGoals"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/etSearch"
@@ -76,27 +75,27 @@
                     android:src="@drawable/piggy" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text="Start a new goal"
                     android:textColor="#AAAAAA"
                     android:textStyle="bold"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="You have no active goals yet. Tap the '+' button to set your first savings target"
                     android:textColor="#AAAAAA"
                     android:textSize="14sp"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- ADD GOAL BUTTON -->
+    <!-- PLUS BUTTON -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAddGoal"
         android:layout_width="56dp"
@@ -109,7 +108,7 @@
         app:tint="#000000"
         app:borderWidth="0dp" />
 
-    <!-- BOTTOM NAVIGATION -->
+    <!-- BOTTOM NAV -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"

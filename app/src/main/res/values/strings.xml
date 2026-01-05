@@ -70,4 +70,15 @@
     <string name="already_have_account">Already have an account?</string>
     <string name="log_in">Log in</string>
 
+    <string-array name="goal_categories">
+        <item>Personal &amp; Lifestyle</item>
+        <item>Gifts &amp; Celebrations</item>
+        <item>Emergency Fund</item>
+        <item>Education</item>
+        <item>Travel &amp; Leisure</item>
+        <item>Investments</item>
+        <item>Other</item>
+    </string-array>
+
+
 </resources>
